@@ -1,6 +1,7 @@
 # Additional packages
 PRODUCT_PACKAGES += \
 	Development \
+        PerformanceControl \
 	LatinIME \
 	VideoEditor \
 	VoiceDialer \
@@ -31,4 +32,3 @@ PRODUCT_PACKAGES += \
 	htop \
 	powertop \
 	lsof
-

@@ -25,7 +25,23 @@ PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/omni/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/omni/prebuilt/bin/50-hosts.sh:system/addon.d/50-hosts.sh \
+    vendor/omni/prebuilt/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel \
+    vendor/omni/prebuilt/etc/init.d/00su:system/etc/init.d/00su \
     vendor/omni/prebuilt/bin/blacklist:system/addon.d/blacklist
+
+# superUSER
+#PRODUCT_COPY_FILES += \
+#      vendor/XPE/SuperSU/bin/.ext:system \
+#      vendor/XPE/SuperSU/install-recovery.sh:system/etc/install-recovery.sh \
+#      vendor/XPE/SuperSU/su:system/xbin/su \
+#      vendor/XPE/SuperSU/su:system/bin/su \
+#      vendor/XPE/SuperSU/chattr:system/bin/chattr \
+#      vendor/XPE/SuperSU/chattr:system/xbin/chattr
+
+#XPE files
+#BUILD_PREBUILD =+ \
+#      vendor/XPE/OTA.apk:system/app/OTA.apk \
+#      vendor/XPE/SuperSU/superuser.apk:system/app/superuser.apk  
 
 # init.d support
 PRODUCT_COPY_FILES += \
